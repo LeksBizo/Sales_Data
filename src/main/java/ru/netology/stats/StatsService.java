@@ -53,14 +53,14 @@ public class StatsService {
     }
 
     public int monthUpAverage(long[] sales) { //продажи выше среднего
-        int monthUPAverageSales = 0;
+        int monthUpAverageSales = 0;
         long averageSale = average(sales);
         for (long sale : sales) {
 
             if (sale > averageSale) {
-                monthUPAverageSales++;
+                monthUpAverageSales++;
             }
         }
-        return monthUPAverageSales;
+        return monthUpAverageSales;
     }
 }
